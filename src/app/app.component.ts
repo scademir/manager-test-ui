@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  public isMenuOpen: boolean = false;
+
   title = 'manager-ui';
+
+
+  public onSidenavClick(): void {
+    this.isMenuOpen = false;
+  }
+  
 }
